@@ -1,17 +1,17 @@
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router';
 
-import SignUpPage from './pages/SignUpPage.jsx';
-import LoginPage from './pages/LoginPage.jsx';
-import Homepage from './pages/Homepage.jsx';
-import Notifications from './pages/Notifications.jsx';
-import ChatPage from './pages/ChatPage.jsx';
-import OnboardingPage from './pages/OnboardingPage.jsx';
-import CallPage from './pages/CallPage.jsx';
-import toast, { Toaster } from 'react-hot-toast';
-import PageLoader from './components/PageLoader.jsx';
-import useAuthUser from './hooks/useAuthUser.js';
-import Layout from './components/Layout.jsx';
+import SignUpPage from './pages/SignUpPage.jsx'
+import LoginPage from './pages/LoginPage.jsx'
+import Homepage from './pages/HomePage.jsx'
+import Notifications from './pages/Notifications.jsx'
+import ChatPage from './pages/ChatPage.jsx'
+import OnboardingPage from './pages/OnboardingPage.jsx'
+import CallPage from './pages/CallPage.jsx'
+import toast, { Toaster } from "react-hot-toast"
+import PageLoader from './components/PageLoader.jsx'
+import useAuthUser from './hooks/useAuthUser.js'
+import Layout from './components/Layout.jsx'
 
 const App = () => {
   const { isLoading, authUser } = useAuthUser();
