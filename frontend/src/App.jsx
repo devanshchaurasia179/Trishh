@@ -106,7 +106,7 @@ const App = () => {
           <Route
             path="/profile"
             element={
-              !isAuthenticated ? (
+              isAuthenticated && isOnboarded ? (
                 <Navigate to="/" />
               ) : (
                 <Layout showSidebar={true}>
